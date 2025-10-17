@@ -70,6 +70,7 @@ Add your name and student number to the README.md file, as shown below:
 Your Name, Student Number
 Ryan O'Loughlin
 20105917
+~~~
 
 Push your changes to GitHub:
 
