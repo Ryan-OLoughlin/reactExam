@@ -10,6 +10,7 @@ import Typography from "@mui/material/Typography";
 import Drawer from "@mui/material/Drawer";
 import MovieReviews from "../movieReviews"
 import LanguageIcon from '@mui/icons-material/Language';
+import SavingsIcon from '@mui/icons-material/Savings';
 
 const root = {
   display: "flex",
@@ -62,9 +63,12 @@ const MovieDetails = ({ movie }) => {  // Don't miss this!
           icon={<LanguageIcon />}
           label={`Original Language ${movie.original_language}`}
         />
+        <Chip 
+          icon={<SavingsIcon />}
+          label={`Budget: ${(Math.abs(Number(movie.budget)) / 1.0e+6).toFixed(0) + "m"}`}
+        />
         <Chip label={`Released: ${movie.release_date}`} />
       </Paper>
-
       <Fab
         color="secondary"
         variant="extended"
